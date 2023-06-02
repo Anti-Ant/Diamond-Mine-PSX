@@ -234,7 +234,7 @@ if game.Workspace:FindFirstChild("plat") then game.Workspace.plat:Destroy() end
 local p = Instance.new("Part") 
 p.Anchored = true
 p.Name = "plat"
-p.Position = Vector3.new(8798.3623046875, -57.690189361572266, 3034.807373046875)
+p.Position = Vector3.new(8798.3623046875, -55.690189361572266, 3034.807373046875)
 p.Size = Vector3.new(100, 1, 100)
 p.Parent = game.Workspace
 local gui = Instance.new("SurfaceGui")
