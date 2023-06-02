@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
     while not game:IsLoaded() do wait(1) end
 end
-wait(0.5)
+wait(1)
 
 settingsconfig = {
 	targetmulti = 3,
