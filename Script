@@ -356,7 +356,7 @@ if tt >= settingsconfig.timeframe then
     writefile("timeframe.txt", "0")
 end
 pcall(WH)
-wait(60)
+wait(120)
 
 -- Replace Everything After This With Your Own Server Hopper If You Want To Use Your Own (Or Use The Hopper In #script) :)
 
