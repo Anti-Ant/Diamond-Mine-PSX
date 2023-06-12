@@ -1672,14 +1672,14 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 					while BankIndex_InProgress do
 					
 						UpdateInfo()
-						if not petsToWithdraw or #petsToWithdraw < 50 then
+						if not petsToWithdraw or #petsToWithdraw < 27 then
 							for petIdentifer, pet in pairs(petsAvailableOnBank) do 
-								if pet and pet.uid and #petsToWithdraw < 50 then
+								if pet and pet.uid and #petsToWithdraw < 27 then
 									table.insert(petsToWithdraw, pet.uid)
 									petsAvailableOnBank[petIdentifer] = nil
 								end
 								
-								if #petsToWithdraw >= 50 then break end
+								if #petsToWithdraw >= 27 then break end
 							end
 						end
 						
