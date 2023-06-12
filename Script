@@ -15,7 +15,7 @@ settingsconfig = {
 	safetyrange = 500, -- If you are within this much studs as another player it will server hop (set to 0 if you dont want it to do this)
 	webhook = "https://discord.com/api/webhooks/1113975481813975133/7Yqq1AW_BjF8qjGH4SLgo3ENUE19fVLtOiEeOqeSeJqFxBHHjl1Yk01eY71clmFu7C-2",
     timeframewh = "60",
-    timeframe = 120 -- Seconds
+    timeframe = 60 -- Seconds
 }
 local TimeElapsed = 0
 local timer = coroutine.create(function()
