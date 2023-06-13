@@ -40,7 +40,7 @@ local breakvaults = settings.breakvaults or false
 local ignorepresents = settings.ignorepresents or false
 local WEBHOOK = settings.webhook or ""
 local AutoTripleDamage = settings.autotripledamage or true
-local AutoServerDamage = settings.autoserverdamage or true
+local AutoServerDamage = settings.autoserverdamage or false
 
 local oldJob = game.JobId
 
