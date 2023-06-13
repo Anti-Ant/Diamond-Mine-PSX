@@ -199,7 +199,6 @@ local TimeElapsed = 0
         AutoCollectOrbs = true, -- If This Is True It Will Collect The Orbs Automatically
         Loop = false, -- If This Is True It Will Happen All Again And Again (Only Enable If Server Hop Is False)
         WaitTime = 20, -- If Something Isnt Broken Past This Time Then Move On To The Next Thing 1 = 0.1s
-        webhook "https://discord.com/api/webhooks/1113975481813975133/7Yqq1AW_BjF8qjGH4SLgo3ENUE19fVLtOiEeOqeSeJqFxBHHjl1Yk01eY71clmFu7C-2",
         ThingsToBreak = {
         	"Apple",
         	"Orange",
