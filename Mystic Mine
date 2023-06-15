@@ -1,4 +1,4 @@
-FaSettings = {
+Settings = {
     ["On Screen Trackers"] = true,
     ["Performance"] = {
         ["Disable 3D Rendering"] = false,
