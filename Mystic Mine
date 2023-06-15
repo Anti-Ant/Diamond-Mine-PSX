@@ -1577,7 +1577,9 @@ function WH()
                     },
                     ["footer"] = {
                         ["text"] = "Powered by NotAnt",
-                        ["icon_url"] = "https://i.imgur.com/Iqshuj9.jpg" -- Replace with the URL of your game's icon or logo
+                        ["icon_url"] = "https://i.imgur.com/Iqshuj9.jpg",
+                        ["icon_width"] = 0.2,   -- Set the desired width ratio (1/5 of the original size)
+                        ["icon_height"] = 0.2,  -- Set the desired height ratio (1/5 of the original size)
                     }
                 }
             }
