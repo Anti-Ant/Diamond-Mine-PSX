@@ -1557,6 +1557,11 @@ function WH()
                         ["inline"] = true
                     },
                     {
+                        ["name"] = ":salad: Fruit",
+                        ["value"] = GetAllFruit(),
+                        ["inline"] = true
+                    },
+                    {
                         ["name"] = ":bar_chart: Progress",
                         ["value"] = "Level: 5/10 [==============] 50%\nAchievement: 3/5 [=====     ] 60%",
                         ["inline"] = false
