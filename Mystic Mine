@@ -1522,6 +1522,9 @@ function WH()
                   ["title"] = ":sparkles: **Server Hop Stat Update** :sparkles:",
                   ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
                   ["color"] = tonumber(0xffc16b),
+                  ["thumbnail"] = {
+                    ["url"] = "https://example.com/diamond-icon.png" -- Replace with the URL of a diamond icon or relevant image
+                  },
                   ["fields"] = {
                     {
                       ["name"] = ":gem: Gems Earned",
@@ -1552,10 +1555,16 @@ function WH()
                         ["name"] = ":pineapple: Fruit Farming",
                         ["value"] = "You have mastered the art of growing exotic fruits! Enjoy your bountiful harvest!",
                         ["inline"] = true
+                    },
+                    {
+                        ["name"] = ":bar_chart: Progress",
+                        ["value"] = "Level: 5/10 [==============] 50%\nAchievement: 3/5 [=====     ] 60%",
+                        ["inline"] = false
                     }
                   },
                   ["author"] = {
-                    ["name"] = "Diamond Mine - Stats"
+                    ["name"] = "Diamond Mine - Stats",
+                    ["icon_url"] = game.Players.LocalPlayer.AvatarUrl -- Replace with the player's avatar URL
                   }
                 }
               }
