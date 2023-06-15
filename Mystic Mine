@@ -1506,6 +1506,8 @@ function GetMulti(B)
     end
 local GemsEarned = 0
 local TotalGemsEarned = 0
+local TotalGemsEarned = 0
+local TotalGemsEarned = 0
 local StartingGems = Library.Save.Get().Diamonds
 HttpService = game:GetService("HttpService")
 function WH()
@@ -1515,64 +1517,71 @@ function WH()
         Headers = {
             ["Content-Type"] = "application/json"
         },
-        Body = HttpService:JSONEncode{
+        Body = HttpService:JSONEncode({
             ["content"] = "",
             ["embeds"] = {
                 {
-                  ["title"] = ":sparkles: **Server Hop Stat Update** :sparkles:",
-                  ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
-                  ["color"] = tonumber(0xffc16b),
-                  ["thumbnail"] = {
-                    ["url"] = "https://i.imgur.com/LcFoVXi.png" -- Replace with the URL of a diamond icon or relevant image
-                  },
-                  ["fields"] = {
-                    {
-                      ["name"] = ":gem: Gems Earned",
-                      ["value"] = ":clock1: **Time Taken:** ``"..formatTime(TimeElapsed).."``\n:gem: **Gems Earned:** ``"..add_suffix(GemsEarned).."``\n:gem: **Total Gems Earned:** ``" .. add_suffix(TotalGemsEarned) .. "``\n:bank: **Total Balance:** ``" .. add_suffix(Library.Save.Get().Diamonds) .. "``" ,
-                      ["inline"] = true
+                    ["title"] = ":sparkles: **Server Hop Stat Update** :sparkles:",
+                    ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
+                    ["color"] = tonumber(0xffc16b),
+                    ["thumbnail"] = {
+                        ["url"] = "https://i.imgur.com/LcFoVXi.png" -- Replace with the URL of a diamond icon or relevant image
                     },
-                    {
-                        ["name"] = ":fireworks: Achievement Unlocked!",
-                        ["value"] = "You have successfully broken everything in the server! :tada:",
-                        ["inline"] = false
+                    ["image"] = {
+                        ["url"] = "https://i.imgur.com/NAJkPGI.jpg" -- Replace with the URL of your desired wallpaper image
                     },
-                    {
-                        ["name"] = ":trophy: Leaderboard Rank",
-                        ["value"] = "Congratulations! You have climbed to the top of the server's leaderboard!",
-                        ["inline"] = false
+                    ["fields"] = {
+                        {
+                            ["name"] = ":gem: Gems Earned",
+                            ["value"] = ":clock1: **Time Taken:** ``"..formatTime(TimeElapsed).."``\n:gem: **Gems Earned:** ``"..add_suffix(GemsEarned).."``\n:gem: **Total Gems Earned:** ``" .. add_suffix(TotalGemsEarned) .. "``\n:bank: **Total Balance:** ``" .. add_suffix(Library.Save.Get().Diamonds) .. "``" ,
+                            ["inline"] = true
+                        },
+                        {
+                            ["name"] = ":fireworks: Achievement Unlocked!",
+                            ["value"] = "You have successfully broken everything in the server! :tada:",
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":trophy: Leaderboard Rank",
+                            ["value"] = "Congratulations! You have climbed to the top of the server's leaderboard!",
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":moneybag: Riches Await",
+                            ["value"] = "With your incredible earnings, you can now afford the rarest items in the game!",
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":sparkler: Active Boosts",
+                            ["value"] = GetActiveBoosts(),
+                            ["inline"] = true
+                        },
+                        {
+                            ["name"] = ":pineapple: Fruit Farming",
+                            ["value"] = "You have mastered the art of growing exotic fruits! Enjoy your bountiful harvest!",
+                            ["inline"] = true
+                        },
+                        {
+                            ["name"] = ":salad: Fruit",
+                            ["value"] = GetAllFruit(),
+                            ["inline"] = true
+                        },
+                        {
+                            ["name"] = ":bar_chart: Progress",
+                            ["value"] = "Level: 5/10 [==============] 50%\nAchievement: 3/5 [=====     ] 60%",
+                            ["inline"] = false
+                        }
                     },
-                    {
-                        ["name"] = ":moneybag: Riches Await",
-                        ["value"] = "With your incredible earnings, you can now afford the rarest items in the game!",
-                        ["inline"] = false
+                    ["author"] = {
+                        ["name"] = "Diamond Mine - Stats"
                     },
-                    {
-                        ["name"] = ":sparkler: Active Boosts",
-                        ["value"] = GetActiveBoosts(),
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = ":pineapple: Fruit Farming",
-                        ["value"] = "You have mastered the art of growing exotic fruits! Enjoy your bountiful harvest!",
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = ":salad: Fruit",
-                        ["value"] = GetAllFruit(),
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = ":bar_chart: Progress",
-                        ["value"] = "Level: 5/10 [==============] 50%\nAchievement: 3/5 [=====     ] 60%",
-                        ["inline"] = false
+                    ["footer"] = {
+                        ["text"] = "Powered by NotAnt",
+                        ["icon_url"] = "https://i.imgur.com/Iqshuj9.jpg" -- Replace with the URL of your game's icon or logo
                     }
-                  },
-                  ["author"] = {
-                    ["name"] = "Diamond Mine - Stats"
-                  }
                 }
-              }
-              }
+            }
+        })
     })
 end
 
