@@ -1523,7 +1523,7 @@ function WH()
                   ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
                   ["color"] = tonumber(0xffc16b),
                   ["thumbnail"] = {
-                    ["url"] = "" -- Replace with the URL of a diamond icon or relevant image
+                    ["url"] = "https://i.imgur.com/LcFoVXi.png" -- Replace with the URL of a diamond icon or relevant image
                   },
                   ["fields"] = {
                     {
@@ -1568,8 +1568,7 @@ function WH()
                     }
                   },
                   ["author"] = {
-                    ["name"] = "Diamond Mine - Stats",
-                    ["icon_url"] = game.Players.LocalPlayer.https://www.roblox.com/headshot-thumbnail/image?userId="..player.UserId.."&width=420&height=420&format=png" -- Replace with the player's avatar URL
+                    ["name"] = "Diamond Mine - Stats"
                   }
                 }
               }
