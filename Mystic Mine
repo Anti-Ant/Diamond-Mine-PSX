@@ -1,4 +1,4 @@
-Settings = {
+FaSettings = {
     ["On Screen Trackers"] = true,
     ["Performance"] = {
         ["Disable 3D Rendering"] = false,
@@ -1555,7 +1555,7 @@ function WH()
                     }
                   },
                   ["author"] = {
-                    ["name"] = "Mystic Farmer - Stats"
+                    ["name"] = "Diamond Mine - Stats"
                   }
                 }
               }
