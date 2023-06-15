@@ -1525,10 +1525,14 @@ function WH()
                     ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
                     ["color"] = tonumber(0xffc16b),
                     ["thumbnail"] = {
-                        ["url"] = "https://i.imgur.com/LcFoVXi.png" -- Replace with the URL of a diamond icon or relevant image
+                        ["url"] = "https://i.imgur.com/LcFoVXi.png", -- Replace with the URL of a diamond icon or relevant image
+                        ["icon_width"] = 0.5,   -- Set the desired width ratio (1/5 of the original size)
+                        ["icon_height"] = 0.5  -- Set the desired height ratio (1/5 of the original size)
                     },
                     ["image"] = {
-                        ["url"] = "https://i.imgur.com/NAJkPGI.jpg" -- Replace with the URL of your desired wallpaper image
+                        ["url"] = "https://i.imgur.com/NAJkPGI.jpg", -- Replace with the URL of your desired wallpaper image
+                        ["icon_width"] = 0.2,   -- Set the desired width ratio (1/5 of the original size)
+                        ["icon_height"] = 0.2  -- Set the desired height ratio (1/5 of the original size)
                     },
                     ["fields"] = {
                         {
@@ -1578,8 +1582,6 @@ function WH()
                     ["footer"] = {
                         ["text"] = "Powered by NotAnt",
                         ["icon_url"] = "https://i.imgur.com/Iqshuj9.jpg",
-                        ["icon_width"] = 0.2,   -- Set the desired width ratio (1/5 of the original size)
-                        ["icon_height"] = 0.2,  -- Set the desired height ratio (1/5 of the original size)
                     }
                 }
             }
