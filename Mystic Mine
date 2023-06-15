@@ -1519,7 +1519,7 @@ function WH()
             ["content"] = "",
             ["embeds"] = {
                 {
-                  ["title"] = ":sparkles: Server Hop Stat Update (2.0 V1) (Summer Edition) :sparkles:",
+                  ["title"] = ":sparkles: **Server Hop Stat Update** :sparkles:",
                   ["description"] = "Successfully Broke Everything In Server. Hopping To New Server!",
                   ["color"] = tonumber(0xffc16b),
                   ["fields"] = {
