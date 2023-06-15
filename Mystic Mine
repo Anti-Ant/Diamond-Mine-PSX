@@ -1702,9 +1702,9 @@ GemsEarned = EndingGems - StartingGems
 if not isfile("gemtotal.txt") then writefile("gemtotal.txt", "0") end
 TotalGemsEarned = GemsEarned + tonumber(readfile("gemtotal.txt"))
 writefile("gemtotal.txt", tostring(TotalGemsEarned))
-wait(3)
+wait(2)
 pcall(WH)
-wait(1)
+wait(0.5)
 
 local function getServerIDs(minPlayers, maxPlayers)
     local apiUrl = "https://games.roblox.com/v1/games/[GAME_ID]/servers/Public?sortOrder=Asc&limit=100"
