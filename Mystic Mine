@@ -1536,7 +1536,6 @@ function WH()
                             ["inline"] = true
                         },
                         {
-                        {
                             ["name"] = ":sparkler: Active Boosts",
                             ["value"] = GetActiveBoosts(),
                             ["inline"] = true
