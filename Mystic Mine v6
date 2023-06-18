@@ -1742,49 +1742,4 @@ GemsEarned = EndingGems - StartingGems
 if not isfile("gemtotal.txt") then writefile("gemtotal.txt", "0") end
 TotalGemsEarned = GemsEarned + tonumber(readfile("gemtotal.txt"))
 writefile("gemtotal.txt", tostring(TotalGemsEarned))
-wait(3)
-pcall(WH)
-wait(1)
 
-local function getServerIDs(minPlayers, maxPlayers)
-    local apiUrl = "https://games.roblox.com/v1/games/[GAME_ID]/servers/Public?sortOrder=Asc&limit=100"
-    local gameID = game.PlaceId
-    local serverIDs = {}
-    local nextPageCursor = ""
-    local stopSearching = false
-    
-    repeat
-        local url = apiUrl:gsub("%[GAME_ID%]", gameID)
-        if nextPageCursor ~= "" then
-            url = url .. "&cursor=" .. nextPageCursor
-        end
-        local response = game:HttpGetAsync(url)
-        local json = game.HttpService:JSONDecode(response)
-        
-        for _, server in ipairs(json.data) do
-            local playerCount = server.playing
-            if playerCount >= minPlayers and playerCount <= maxPlayers then
-                table.insert(serverIDs, server.id)
-            elseif playerCount > maxPlayers then
-                stopSearching = true
-                break
-            end
-        end
-        
-        nextPageCursor = json.nextPageCursor
-    until nextPageCursor == nil or stopSearching
-    
-    return serverIDs
-end
-
-function ServerHop(ServerList)
-    oldJob = game.JobId
-    while 1 do
-        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, ServerList[math.random(1, #ServerList)], game.Players.LocalPlayer)
-        task.wait(1)
-        if oldJob ~= game.JobId then break end
-    end
-end
-
-local servers = getServerIDs(Settings["Server Hop"]["Min Players"], Settings["Server Hop"]["Max Players"])
-ServerHop(servers)
