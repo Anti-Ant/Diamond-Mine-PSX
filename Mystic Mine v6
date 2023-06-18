@@ -1605,18 +1605,7 @@ if Library.Save.Get().World ~= "Diamond Mine" then
         return serverIDs
     end
     
-    function ServerHop(ServerList)
-        oldJob = game.JobId
-        while 1 do
-            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, ServerList[math.random(1, #ServerList)], game.Players.LocalPlayer)
-            task.wait(1)
-            if oldJob ~= game.JobId then break end
-        end
-    end
-    
-    local servers = getServerIDs(Settings["Server Hop"]["Min Players"], Settings["Server Hop"]["Max Players"])
-    ServerHop(servers)
-end
+
 if game.Workspace:FindFirstChild("plat") then game.Workspace.plat:Destroy() end
 local p = Instance.new("Part") 
 p.Anchored = true
@@ -1687,21 +1676,7 @@ local function checkNearbyPlayers()
                     return serverIDs
                 end
                 
-                function ServerHop(ServerList)
-                    oldJob = game.JobId
-                    while 1 do
-                        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, ServerList[math.random(1, #ServerList)], game.Players.LocalPlayer)
-                        task.wait(1)
-                        if oldJob ~= game.JobId then break end
-                    end
-                end
-                
-                local servers = getServerIDs(Settings["Server Hop"]["Min Players"], Settings["Server Hop"]["Max Players"])
-                ServerHop(servers)
-            end
-        end
-    end
-end
+
 
 coi = coroutine.create(function()
 	while true do
