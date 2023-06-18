@@ -24,8 +24,8 @@ Settings = {
         ["Present"] = 5
 	},
     ["Webhooks"] = {
-        ["Server Hop Webhook"] = "https://discord.com/api/webhooks/1119529671680335973/_ops1cejOwLtsmpNG8jHZOFtMr59VyO5VwyZKGUHauCkTvTawKMrdc4C3luyId_pt0Qk",
-        ["Error"] = "https://discord.com/api/webhooks/1119529671680335973/_ops1cejOwLtsmpNG8jHZOFtMr59VyO5VwyZKGUHauCkTvTawKMrdc4C3luyId_pt0Qk"
+        ["Server Hop Webhook"] = "https://discord.com/api/webhooks/1113975481813975133/7Yqq1AW_BjF8qjGH4SLgo3ENUE19fVLtOiEeOqeSeJqFxBHHjl1Yk01eY71clmFu7C-2",
+        ["Error"] = "https://discord.com/api/webhooks/1119837214881366107/vPmvCEqaVooHZGhEculYpJAnEkbLClJ35_CZVTt7930DgQ0mr8oEiDUwANjqHfVZ9bSB"
     },
     ["Pet Team"] = { -- disabled cuz ppl didnt know how to use
         ["Mode"] = "Best", -- Best Or Manual: Best = Highest Power, Manual = All Pets With A Certain Nickname
