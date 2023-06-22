@@ -1,6 +1,6 @@
 getgenv().scriptConfiguration = {
     ["Fruits"] = {
-        ["Minimum Fruits"] = 130,
+        ["Minimum Fruits"] = 0,
         ["Maximum Fruits"] = 200
     },
     ["Webhooks"] = {
