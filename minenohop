@@ -58,10 +58,7 @@ hookfunction(Audio.Play, function(...)
     }
 end)
  
-local teleports = {
-    ["Mystic Mine"] = Vector3.new(9043.19141, -34.3321552, 2424.63647),
-    ["Mystic Mine Chest"] = Vector3.new(9043.19141, -34.3321552, 2424.63647)
-}
+
 
 
 function GetOranges()
@@ -198,7 +195,10 @@ if GetOranges() < getgenv().scriptConfiguration["Fruits"]["Minimum Fruits"] then
     repeat task.wait() until canHop()
 end
 
-
+local teleports = {
+    ["Mystic Mine"] = Vector3.new(9043.19141, -34.3321552, 2424.63647),
+    ["Mystic Mine Chest"] = Vector3.new(9043.19141, -34.3321552, 2424.63647)
+}
 while true do
 wait(1)
  if game.Workspace:FindFirstChild("plat") then game.Workspace.plat:Destroy() end
