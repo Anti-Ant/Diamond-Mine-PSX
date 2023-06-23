@@ -66,7 +66,7 @@ wait(1)
 local p = Instance.new("Part") 
 p.Anchored = true
 p.Name = "plat"
-p.Position = Vector3.new(8798.3623046875, -65.690189361572266, 3034.807373046875)
+p.Position = Vector3.new(8798.3623046875, -38.690189361572266, 3034.807373046875)
 p.Size = Vector3.new(100, 1, 100)
 p.Parent = game.Workspace
 local gui = Instance.new("SurfaceGui")
@@ -80,7 +80,7 @@ textLabel.TextColor3 = Color3.new(0, 0, 0)
 textLabel.FontSize = Enum.FontSize.Size14
 textLabel.Parent = gui
 textLabel.TextScaled = true
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8798.3623046875, -61.690189361572266, 3034.807373046875)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8798.3623046875, -34.690189361572266, 3034.807373046875)
 Fire("Performed Teleport")
 local player = game.Players.LocalPlayer
 local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
