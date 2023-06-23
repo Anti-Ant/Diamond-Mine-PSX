@@ -60,6 +60,8 @@ local teleports = {
     ["Mystic Mine"] = Vector3.new(9043.19141, -34.3321552, 2424.63647),
     ["Mystic Mine Chest"] = Vector3.new(9043.19141, -34.3321552, 2424.63647)
 }
+while true do
+wait(1)
  if game.Workspace:FindFirstChild("plat") then game.Workspace.plat:Destroy() end
 local p = Instance.new("Part") 
 p.Anchored = true
@@ -89,7 +91,8 @@ function GetPetsTable()
     end
     return Pets
 end
- 
+end
+
 function GetOranges()
     local Fruit = require(game.ReplicatedStorage.Library.Client.FruitCmds).Directory.Orange
     local newValue = math.floor(require(game.ReplicatedStorage.Library.Client.FruitCmds).Get(LocalPlayer, Fruit))
